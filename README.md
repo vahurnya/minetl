@@ -1,15 +1,9 @@
 # Build
 `sudo docker build -t tl github.com/vahurnya/minetl`
 
-create storage:
-```
-mkdir $HOME/.minecraft
-chmod a+rw $HOME/.minecraft
-```
-
 # Run
 ```
-xhost +local:docker && docker run --rm -it --device /dev/snd --device /dev/dri \
+xhost +local:docker && sudo docker run --rm -it --device /dev/snd --device /dev/dri \
     -e DISPLAY=$DISPLAY \
     -v $HOME/.minecraft/:/minecraft \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
