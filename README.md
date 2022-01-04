@@ -1,6 +1,12 @@
 # Build
 `docker build -t tl github.com/vahurnya/minetl`
 
+create storage:
+```
+mkdir $HOME/.minecraft
+chmod a+rw $HOME/.minecraft
+```
+
 # Run
 ```
 xhost +local:docker && docker run --rm -it --device /dev/snd --device /dev/dri \
