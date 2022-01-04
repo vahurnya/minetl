@@ -3,7 +3,7 @@
 
 # Run
 ```
-xhost +local:docker && sudo docker run --rm -it --device /dev/snd --device /dev/dri \
+sudo docker run --rm -it --device /dev/snd --device /dev/dri \
     -e DISPLAY=$DISPLAY \
     -v $HOME/.minecraft/:/minecraft \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
@@ -25,7 +25,7 @@ to find the parent interface run `ip link` command
 
 start it:
 ```
-xhost +local:docker && sudo docker run --rm -it --device /dev/snd --device /dev/dri \
+sudo docker run --rm -it --device /dev/snd --device /dev/dri \
     -e DISPLAY=$DISPLAY \
     -v $HOME/.minecraft/:/minecraft \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
