@@ -1,5 +1,5 @@
 # Build
-`docker build -t tl https://github.com/vahurnya/minetl/ tl`
+`docker build -t tl github.com/vahurnya/minetl`
 
 # Run
 ```
