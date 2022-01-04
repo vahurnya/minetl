@@ -4,8 +4,6 @@ RUN apt-get update && apt-get install -y jq curl procps openjdk-11-jre x11-xserv
 RUN useradd -d /minecraft -s /bin/sh minecraft
 
 ARG SOURCE=https://dl2.tlauncher.org/f.php?f=files%2FTLauncher-2.839.zip
-# https://turikhay.ru/tlauncher/legacy_beta/bootstrap
-# https://u.tlauncher.ru/legacy_beta/bootstrap
 
 RUN mkdir -p /opt/tlauncher && \
 	curl -sL "${SOURCE}" -o /opt/tlauncher/tl.zip && unzip /opt/tlauncher/tl.zip -d /opt/tlauncher && \
