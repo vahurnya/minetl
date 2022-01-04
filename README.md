@@ -1,5 +1,5 @@
 # Build
-`docker build -t tl github.com/vahurnya/minetl`
+`sudo docker build -t tl github.com/vahurnya/minetl`
 
 create storage:
 ```
