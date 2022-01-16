@@ -1,5 +1,5 @@
 FROM docker.io/debian
-RUN apt-get update && apt-get install -y jq curl procps openjdk-11-jre x11-xserver-utils openjfx unzip
+RUN apt-get update && apt-get install -y jq curl procps openjdk-11-jre x11-xserver-utils openjfx unzip libcanberra-gtk3-module
 
 RUN useradd -d /minecraft -s /bin/sh minecraft
 
