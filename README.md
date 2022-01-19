@@ -13,10 +13,11 @@ xhost +local:docker && sudo docker run --rm -it --device /dev/dri \
     -e DISPLAY=$DISPLAY \
     -v $HOME/.minecraft/:/minecraft \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
-    -v /run/user/$(id -u)/pulse/native:/run/user/1000/pulse/native \
+    -v /run/user/1000/pulse/native:/run/user/1000/pulse/native \
     -e PULSE_SERVER=unix:/run/user/1000/pulse/native \
     tl
 ```
+Ensure UID is 1000 on host (check with `id -u`), otherwise sound will not be passed through. 
 
 Thanks to https://github.com/dm9pZCAq/docker-tlauncher
 
