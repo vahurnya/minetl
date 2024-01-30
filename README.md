@@ -22,7 +22,7 @@ Ensure UID is 1000 on host (check with `id -u`), otherwise sound will not be pas
 Thanks to https://github.com/dm9pZCAq/docker-tlauncher
 
 # Networks
-This is a sample bridged (ipvlan) network for server mode, please replace addresses.
+This is a sample bridged (ipvlan) network for server mode, replace addresses.
 
 Create network:
 ```
